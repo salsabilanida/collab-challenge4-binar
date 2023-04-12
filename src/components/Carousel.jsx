@@ -1,6 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import img from "../assets/image/strange.jpg";
-import { useState } from "react";
+import React, { useState } from "react";
 
 function CarouselNavbar() {
   const [selectedMovie, setSelectedMovie] = useState({});

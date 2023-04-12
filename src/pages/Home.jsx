@@ -1,8 +1,8 @@
 import "../App.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Carousel from "./Carousel";
-import Trending from "../pages/Trending";
+import Carousel from "../components/Carousel";
+import Trending from "../components/Trending";
 import "../style/landingPage.css";
 
 // // Import Swiper React components
@@ -54,7 +54,7 @@ function Home() {
         >
           {Movies?.results?.map((film) => (
             <SwiperSlide>
-              <span onClick={() => navigate("/Detail/" + film.id)}>
+              <span onClick={() => navigate("/detail/" + film.id)}>
                 <div
                   className="card"
                   style={{

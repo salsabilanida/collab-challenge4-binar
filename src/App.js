@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
-import Search from "./pages/Search";
+import SearchedMovie from "./pages/SearchedMovie";
 import All from "./pages/AllMovies";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -18,8 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/All" element={<All />} />
-        <Route path="/Search" element={<Search />} />
-        <Route path="/Search/:name" element={<Search />} />
+        <Route path="/search" element={<SearchedMovie />} />
         <Route path="/detail/:id" element={<Detail />} />
       </Routes>
     </div>
